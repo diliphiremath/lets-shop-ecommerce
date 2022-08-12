@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Home from './containers/Home/Home';
 
 function App() {
   return (
@@ -10,7 +11,10 @@ function App() {
       <header className="App-header">
         <Header></Header>
       </header>
-    <footer>
+      <div>
+        <Home></Home>
+      </div>
+    <footer className="App-footer">
       <Footer></Footer>
     </footer>
     </div>
