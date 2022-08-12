@@ -45,5 +45,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-#Project Setup
+# Project Setup
 [Folder Structure](https://medium.com/swlh/demystifying-the-folder-structure-of-a-react-app-c60b29d90836)
