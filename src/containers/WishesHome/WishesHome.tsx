@@ -2,8 +2,9 @@ import React from 'react';
 import {
     useParams
   } from "react-router-dom";
+import GaneshWishes from '../../components/GaneshWishes/GaneshWishes';
 
-
+ 
 function withParams(Component:any) {
     return (props: any) => <Component {...props} params={useParams()} />;
   }
@@ -11,21 +12,22 @@ function withParams(Component:any) {
 class WishesHome extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = {date: new Date(),name: this.props.params.name};
   }
 
   componentDidMount(){
     console.log(this.props.params)
-    this.setState({
-        name: this.props.params.name
-    })
+    // this.setState({
+        
+    // })
   }
 
   render() {
     return (
       <div>
-        <h1>Hello, world!{this.state.name}</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <GaneshWishes name={this.state.name}></GaneshWishes>
+        {/* <h1>Hello, world!{this.state.name}</h1> */}
+        {/* <h2>It is {this.state.date.toLocaleTimeString()}.</h2> */}
       </div>
     );
   }
