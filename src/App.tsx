@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './containers/Home/Home';
-import WishesHome from './containers/WishesHome/WishesHome';
 import RoutesList from './common/RoutesList';
 import { BrowserRouter as Router } from 'react-router-dom';
 

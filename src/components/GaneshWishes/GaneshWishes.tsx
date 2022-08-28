@@ -6,10 +6,10 @@ const GaneshWishes = (props: { name: string }) => {
     return (
         <div>
             <Marquee direction='left'>
-            <img
+            <img alt="ganesh1"
       src="https://1.bp.blogspot.com/-grbQoykawp4/XzfpWzK8YjI/AAAAAAAABhc/zQLtefPm9jYpl5_R_hd1c2pTrSSCcZYDACNcBGAsYHQ/s1280/ganeshas1.png"
       height="90px" width="40px" />
-      <img
+      <img alt="ganesh1"
       src="https://1.bp.blogspot.com/-u68A3yKlCSs/XzfpXTEIBsI/AAAAAAAABhg/q5iP_nCBcd4KyP27qxDw2CIzihHk9_TFwCNcBGAsYHQ/s640/ganeshass2.png"
       height="90px" width="40px" />
             </Marquee>
@@ -95,7 +95,7 @@ const GaneshWishes = (props: { name: string }) => {
                         Your Ad Here
 
                         <br />
-                        <a href="https://paytm.business/link/89898/LL_20501031" target="_blank"><img
+                        <a href="https://paytm.business/link/89898/LL_20501031"><img
                             src="https://1.bp.blogspot.com/-pdxGTmhgq8s/XetjmVwAQoI/AAAAAAAABSM/5MvCdDlC6pcI8LPftW5H9Qhmk8B0YYvTACNcBGAsYHQ/s1600/Donate.png"
                             className="img-responsive" alt="IDEAZZONE" width="50%" height="20%" /></a>
                         <br />
