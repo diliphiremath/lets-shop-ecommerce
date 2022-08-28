@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './containers/Home/Home';
+import WishesHome from './containers/WishesHome/WishesHome';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Header></Header>
       </header>
       <div>
-        <Home></Home>
+        <WishesHome></WishesHome>
       </div>
     <footer className="App-footer">
       <Footer></Footer>
