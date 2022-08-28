@@ -47,3 +47,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Project Setup
 [Folder Structure](https://medium.com/swlh/demystifying-the-folder-structure-of-a-react-app-c60b29d90836)
+[Heroku CI/CD](https://blog.logrocket.com/ci-cd-pipelines-react-github-actions-heroku/)
