@@ -8,17 +8,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header></Header>
-      </header>
       <div>
         <Router>
           <RoutesList></RoutesList>
         </Router>
-      </div>
-      <footer className="App-footer">
-        <Footer></Footer>
-      </footer>
+      </div>      
     </div>
   );
 }

@@ -1,17 +1,28 @@
 import * as React from 'react';
 import './GaneshWishes.css';
 import Marquee from "react-fast-marquee";
+import ReactPlayer from 'react-player';
 
 const GaneshWishes = (props: { name: string }) => {
     return (
+
         <div>
+            <div>
+                <ReactPlayer
+                    url="https://file-examples.com/storage/fe8bd9dfd063066d39cfd5a/2017/11/file_example_MP3_700KB.mp3"
+                    width="400px"
+                    height="50px"
+                    playing={true}
+                    controls={false}
+                />
+            </div>
             <Marquee direction='left'>
-            <img alt="ganesh1"
-      src="https://1.bp.blogspot.com/-grbQoykawp4/XzfpWzK8YjI/AAAAAAAABhc/zQLtefPm9jYpl5_R_hd1c2pTrSSCcZYDACNcBGAsYHQ/s1280/ganeshas1.png"
-      height="90px" width="40px" />
-      <img alt="ganesh1"
-      src="https://1.bp.blogspot.com/-u68A3yKlCSs/XzfpXTEIBsI/AAAAAAAABhg/q5iP_nCBcd4KyP27qxDw2CIzihHk9_TFwCNcBGAsYHQ/s640/ganeshass2.png"
-      height="90px" width="40px" />
+                <img alt="ganesh1"
+                    src="https://1.bp.blogspot.com/-grbQoykawp4/XzfpWzK8YjI/AAAAAAAABhc/zQLtefPm9jYpl5_R_hd1c2pTrSSCcZYDACNcBGAsYHQ/s1280/ganeshas1.png"
+                    height="90px" width="40px" />
+                <img alt="ganesh1"
+                    src="https://1.bp.blogspot.com/-u68A3yKlCSs/XzfpXTEIBsI/AAAAAAAABhg/q5iP_nCBcd4KyP27qxDw2CIzihHk9_TFwCNcBGAsYHQ/s640/ganeshass2.png"
+                    height="90px" width="40px" />
             </Marquee>
             <div className="Ideazzonecontainer">
                 <div className="Ideazzone-main-greeting">
@@ -57,7 +68,7 @@ const GaneshWishes = (props: { name: string }) => {
                         <img
                             src="https://1.bp.blogspot.com/-H0zGWDwgTr4/XzfqKj01SeI/AAAAAAAABh4/em5TgecKCeAH5IVngHXoYbkZLrdpbBcoQCNcBGAsYHQ/s520/ganesh2.gif"
                             className="img-responsive" alt="IDEAZZONE" width="85%" />
-                        Your Ad Here
+                        {/* Your Ad Here */}
                         <br>
                         </br>
 
@@ -92,13 +103,9 @@ const GaneshWishes = (props: { name: string }) => {
                             className="img-responsive" alt="IDEAZZONE" width="85%" />
                         <br />
 
-                        Your Ad Here
+                        {/* Your Ad Here */}
 
-                        <br />
-                        <a href="https://paytm.business/link/89898/LL_20501031"><img
-                            src="https://1.bp.blogspot.com/-pdxGTmhgq8s/XetjmVwAQoI/AAAAAAAABSM/5MvCdDlC6pcI8LPftW5H9Qhmk8B0YYvTACNcBGAsYHQ/s1600/Donate.png"
-                            className="img-responsive" alt="IDEAZZONE" width="50%" height="20%" /></a>
-                        <br />
+
                         <br />
                         <img
                             src="https://1.bp.blogspot.com/-kGhePjOwEFg/Xzfqfvt8izI/AAAAAAAABiI/s-iWl3WBUS4UcBl6847nja9P5vQ15QFRwCNcBGAsYHQ/s494/ganesh5.gif"
@@ -106,18 +113,10 @@ const GaneshWishes = (props: { name: string }) => {
                         <br />
                         <br />
                         <br />
-                        <a href="https://www.bluehost.com/track/deepak2020"><img
-                            src="https://1.bp.blogspot.com/-bJvrtwY8_hw/XXFI01-Bz6I/AAAAAAAAAqk/X7knNF3NOw8bEZc_DD8EJKSTL2OyM-BTQCLcBGAs/s1600/bluehost.jpg"
-                            className="img-responsive" alt="IDEAZZONE" width="95%" height="9%" /></a>
-                        <br />
 
-                        <img
-                            src="https://1.bp.blogspot.com/-PUktKp3wO1o/XXDWe552cpI/AAAAAAAAAo4/YWUxdk1CpJg_xyHxok06J7fvBcF76RDrACLcBGAs/s1600/hello.gif"
-                            className="img-responsive" alt="IDEAZZONE" width="30%" height="5%" />
-                        <br />
 
                         {/* <center h3 color="#dfff02"> */}
-                        <a href="https://www.ideazzone.com/">Ideaz Zone</a>
+
                         <div style={{ textAlign: "center" }}>
                             <span className="IDEAZZONEdot"></span>
                             <span className="IDEAZZONEdot"></span>
