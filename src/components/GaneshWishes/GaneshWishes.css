@@ -489,9 +489,9 @@ img {
 }
 
 /* second */
-body {
+/* body {
     background: #e860cc;
-}
+} */
 
 .mainContainer {
     max-width: 400px;
@@ -749,4 +749,11 @@ img[alt="Ideazzone.com"] {
     padding: 4px 5px 3px;
     width: 99%;
     height: 4%
+}
+
+.bell {
+    max-width: 170px;
+    width: 90%;
+    animation: aadisoni linear 3s;
+    animation-iteration-count: infinite;
 }
