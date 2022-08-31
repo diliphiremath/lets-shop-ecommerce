@@ -1,20 +1,30 @@
 import * as React from 'react';
 import './GaneshWishes.css';
 import Marquee from "react-fast-marquee";
-import ReactPlayer from 'react-player';
+// import ReactAudioPlayer from 'react-audio-player';
+// import ReactPlayer from 'react-player';
 
 const GaneshWishes = (props: { name: string }) => {
-    return (
+    let audio = new Audio("https://a.touchpur.com/en/jaidev.mp3")
+    const startSong = () => {
+        if (typeof audio.loop == 'boolean') {
+            audio.loop = true;
+        }
+        else {
+            audio.addEventListener('ended', function () {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+        }
+        audio.play();
+    }
 
+    return (
         <div>
             <div>
-                <ReactPlayer
-                    url="https://file-examples.com/storage/fe8bd9dfd063066d39cfd5a/2017/11/file_example_MP3_700KB.mp3"
-                    width="400px"
-                    height="50px"
-                    playing={true}
-                    controls={false}
-                />
+                <div>
+                    <img id="loading" src="https://cdn2.vectorstock.com/i/1000x1000/59/66/temple-bell-vector-1525966.jpg" className='bell' onClick={startSong} />
+                </div>
             </div>
             <Marquee direction='left'>
                 <img alt="ganesh1"

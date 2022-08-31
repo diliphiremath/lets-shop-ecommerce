@@ -750,3 +750,10 @@ img[alt="Ideazzone.com"] {
     width: 99%;
     height: 4%
 }
+
+.bell {
+    max-width: 170px;
+    width: 90%;
+    animation: aadisoni linear 3s;
+    animation-iteration-count: infinite;
+}
