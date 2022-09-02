@@ -6,8 +6,9 @@ import "./GaneshWishes.css";
 // import ReactPlayer from 'react-player';
 import { StickyContainer, Sticky } from "react-sticky";
 import Marquee from "react-marquee-master";
+import { Link } from "react-router-dom";
 
-const GaneshWishes = (props: { name: string }) => {
+const GaneshWishes = (props: { name: string, share: boolean }) => {
   const [action, setAction] = React.useState(false);
   const imagesArray = ["https://1.bp.blogspot.com/-grbQoykawp4/XzfpWzK8YjI/AAAAAAAABhc/zQLtefPm9jYpl5_R_hd1c2pTrSSCcZYDACNcBGAsYHQ/s1280/ganeshas1.png",
   'https://1.bp.blogspot.com/-u68A3yKlCSs/XzfpXTEIBsI/AAAAAAAABhg/q5iP_nCBcd4KyP27qxDw2CIzihHk9_TFwCNcBGAsYHQ/s640/ganeshass2.png',
@@ -76,6 +77,21 @@ const GaneshWishes = (props: { name: string }) => {
   let marqueeItems:any = []
   for (let x in imagesArray){
     marqueeItems.push(img1(imagesArray[x]))
+  }
+
+  // input box
+  const [value, setValue] = React.useState(props.name);
+
+  React.useEffect(() => {
+    if(props.share){
+      setAction(true)
+    }
+  },[action, props.share]);
+
+ 
+
+  function onChange(e:any) {
+    setValue(e.target.value);
   }
 
   const startSong = () => {
@@ -181,14 +197,23 @@ const GaneshWishes = (props: { name: string }) => {
                       </h3>
                     </span>
                     <br />
-
+          { !props.share && 
                     <Sticky>{({ style }) => <form style={style}>
+      
                       <label>
                         Name:
-                        <input type="text" name="name" />
+                        <input type="text" name="name" onChange={e => {
+              onChange(e);
+            }} />
                       </label>
+                      <Link to={`/ganeshWishes/${value}/share`}>
                       <input type="submit" value="Submit" />
-                    </form>}</Sticky>
+                      </Link>
+                    </form>}</Sticky>}
+                    { props.share && 
+                    <Sticky>{({ style }) => <div style={style}>
+                      <a href={`whatsapp://send?text= Please Visit https://festivalwishesapp.com/ganeshWishes/${props.name}`}  rel="nofollow noopener" target="_blank" className="share-icon"><img src="https://www.freeiconspng.com/img/46044" style={{height:'36px'}}/>Share via Whatsapp</a>
+                    </div>}</Sticky>}
                   </p>
                   <br></br>
                   <img

@@ -9,7 +9,7 @@ function withParams(Component:any) {
     return (props: any) => <Component {...props} params={useParams()} />;
   }
 
-class WishesHome extends React.Component<any, any> {
+class WishesHomeShare extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = {date: new Date(),name: this.props.params.name};
@@ -25,7 +25,7 @@ class WishesHome extends React.Component<any, any> {
   render() {
     return (
       <div>
-        <GaneshWishes name={this.state.name} share={false}></GaneshWishes>
+        <GaneshWishes name={this.state.name} share={true}></GaneshWishes>
         {/* <h1>Hello, world!{this.state.name}</h1> */}
         {/* <h2>It is {this.state.date.toLocaleTimeString()}.</h2> */}
       </div>
@@ -33,4 +33,4 @@ class WishesHome extends React.Component<any, any> {
   }
 }
 
-export default withParams(WishesHome);
+export default withParams(WishesHomeShare);
