@@ -93,7 +93,7 @@ const GaneshWishes = (props: { name: string }) => {
         false
       );
     }
-    // audio.play();
+    audio.play();
   };
 
   return (
