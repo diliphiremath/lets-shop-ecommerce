@@ -758,10 +758,6 @@ img[alt="Ideazzone.com"] {
     animation-iteration-count: infinite;
 }
 
-.marRight .marquee-container{
-    margin-left: 21em;  
-}
-
 .marquee-container{
     /* min-height: fit-content; */
     position: absolute !important;
@@ -776,4 +772,53 @@ img[alt="Ideazzone.com"] {
 
 .marquee-container:not(.horizontal)::after{
     background: none !important;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 375px) {
+    .marRight .marquee-container{
+        margin-left: 17em;  
+    }
+    
+}
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (min-width:376px) and (max-width: 595px) {
+    .marRight .marquee-container{
+        margin-left: 19em;  
+    }
+    
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .marRight .marquee-container{
+        margin-left: 21em;  
+    }
+    
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .marRight .marquee-container{
+        margin-left: 21em;  
+    }
+    
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    .marRight .marquee-container{
+        margin-left: 21em;  
+    }
+    
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .marRight .marquee-container{
+        margin-left: 21em;  
+    }
+    
 }
