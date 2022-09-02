@@ -757,3 +757,23 @@ img[alt="Ideazzone.com"] {
     animation: aadisoni linear 3s;
     animation-iteration-count: infinite;
 }
+
+.marRight .marquee-container{
+    margin-left: 21em;  
+}
+
+.marquee-container{
+    /* min-height: fit-content; */
+    position: absolute !important;
+    min-width: 3em;
+    background: none !important;
+    height: 2500px;
+}
+
+.marquee-container:not(.horizontal)::before{
+    background: none !important;
+}
+
+.marquee-container:not(.horizontal)::after{
+    background: none !important;
+}
