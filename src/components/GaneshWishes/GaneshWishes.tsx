@@ -303,13 +303,9 @@ const GaneshWishes = (props: { name: string, share: boolean }) => {
       )}
       {action && !props.share &&
         <form id="formBox">
-
-          <label>
-            Name:
             <input id="nameTextBox" type="text" name="name" placeholder="Enter your name" onChange={e => {
               onChange(e);
             }} />
-          </label>
           <Link to={`/ganeshWishes/${value}/share`}>
             <input id="goButton" type="submit" value="Click" />
           </Link>
