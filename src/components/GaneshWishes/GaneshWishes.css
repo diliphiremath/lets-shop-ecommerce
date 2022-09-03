@@ -41,7 +41,6 @@ select {
     left: 0px;
     bottom: 0px;
     height: 40px;
-
     border-radius: 15px;
     box-sizing: border-box;
     padding: 5px;
@@ -50,9 +49,7 @@ select {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    width: 95%;
-    margin-left: 10px;
-    margin-right: 30px;
+    width: 100%;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
     animation: footer infinite linear 1s;
     -webkit-transform: translate3d(30%, 0, 0);
@@ -596,6 +593,7 @@ img {
 }
 
 .footerbtn {
+    margin-left: -30%;
     line-height: 15px;
     bottom: 10px;
     height: 40px;
@@ -608,11 +606,8 @@ img {
     text-align: center;
     text-decoration: none;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
-
     position: fixed;
-    width: 90%;
     left: 0;
-    margin: 2% -22%;
 }
 
 .footerbtn img {
