@@ -567,17 +567,16 @@ img {
 }
 
 #nameTextBox {
+    width: 75%;
     border: 3px solid #000000;
     text-align: center;
     display: inline-block;
-    width: 80%;
     color: black;
     font-size: 16px;
     margin: 0;
     background: #eee;
     height: 48px;
     font-weight: 700;
-    ;
     padding: 8px 0;
 }
 
@@ -597,7 +596,6 @@ img {
 }
 
 .footerbtn {
-    display: none;
     line-height: 15px;
     bottom: 10px;
     height: 40px;
@@ -614,7 +612,7 @@ img {
     position: fixed;
     width: 90%;
     left: 0;
-    margin: 2% 5%;
+    margin: 2% -22%;
 }
 
 .footerbtn img {
