@@ -567,7 +567,7 @@ img {
 }
 
 #nameTextBox {
-    width: 75%;
+    width:77%;
     border: 3px solid #000000;
     text-align: center;
     display: inline-block;
@@ -761,7 +761,7 @@ img[alt="Ideazzone.com"] {
     position: absolute !important;
     min-width: 3em;
     background: none !important;
-    height: 2500px;
+    height: 2000px;
 }
 
 .marquee-container:not(.horizontal)::before{
